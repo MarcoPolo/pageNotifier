@@ -1,0 +1,27 @@
+Simple python script to monitor changes for a webpage!
+
+Tired of always being the last to know about something (SLOWPOKE) Well this is for you! (as long as you know what you want to look for)
+
+It works by pulling the page, hashing it and comparing the hash with an original hash
+
+Reqs:
+pygooglevoice - python wrapper for google voice
+cron - if you want it to check every so often
+
+Setup:
+run getHash.py to fetch the original hash of the page
+
+copy the original hash into the originalPageHash variable in pageNotifier.py
+
+copy the url of the webpage (along with http://) to the pageToCheck variable in pageNotifier.py
+
+save an array of phone numbers to text when the page changes
+
+fill in the details of the .gvoice file and move it to your directory
+
+run the script on a cron job ( 0,30 * * * * python /location/to/pageNotifer.py )
+
+Enjoy!
+
+
+This script was made for the hp touchpad page, LOL!
